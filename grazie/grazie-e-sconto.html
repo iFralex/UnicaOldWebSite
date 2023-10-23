@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Grazie più regalo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        let ScrollToId = id => document.getElementById(id).scrollIntoView({
+            behavior: 'smooth'
+        })
+    </script>
+    <nav id="navbar-header" class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+        <a class="navbar-brand" href="../">
+            <img src="../images/UNICA logo.png" alt="Logo" style="height: 35px;" class="my-3">
+        </a>
+        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars fa-2x"></span>
+        </button>
+        <div class="collapse navbar-collapse d-md-flex justify-content-start" id="navbarNav">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ScrollToId('grazie-sec')">Grazie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ScrollToId('prodotto-sec')">Il prodotto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ScrollToId('gioco-sec')">Il packaging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ScrollToId('gioco-sec')">Gioca e risparmia</a>
+                </li>
+                <li class="nav-item d-flex d-md-none">
+                    <a class="nav-link w-100" href="#section3">
+                        <button class="btn-lg btn-light w-100">Ordina ora</button>
+                    </a>
+                </li>
+            </ul>
+            <div class="d-md-flex d-none justify-content-end">
+                <button class="btn-lg btn-light">Ordina</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="grazie-sec">
+        <div class="cover-prodotto">
+            <div class="cover-prod-img" style="background-image: url(https://st2.depositphotos.com/5647624/11820/i/950/depositphotos_118200638-stock-photo-sunrise-with-clouds-light-rays.jpg);">
+                <div class="cover-prod-overlay">
+                    <div class="cover-prod-text d-flex justify-content-center align-items-center">
+                        <div class="row d-flex justify-content-center">
+                            <div id="grazie-titolo" class="col-lg-6 col-md-10 col-10">
+                                <div class="d-flex justify-content-center">
+                                    <h1>Grazie!</h1>
+                                </div>
+                                <p>
+                                    Voglio ringraziarti personalmente per aver scelto di acquistare i nostri orecchini. Il tuo supporto significa molto per noi e ci dà la motivazione per continuare a offrire prodotti di alta qualità. Spero che i tuoi orecchini ti apportino gioia e che li
+                                    indossi con orgoglio.
+                                </p>
+                                <p>
+                                    Se hai bisogno di supporto o hai domande, non esitare a contattarci. La tua soddisfazione è la nostra massima priorità e siamo dedicati a garantirti un'esperienza di acquisto eccellente.
+                                </p>
+                                <p>
+                                    Inoltre, vorrei invitarti a partecipare ai nostri giochi a premi. Seguici sui nostri canali social per avere la possibilità di vincere sorprese esclusive. Grazie ancora per il tuo acquisto e spero che i tuoi orecchini ti rendano felice per molto tempo.
+                                </p>
+                                <button type="submit" class="btn btn-dark d-inline mr-3 ordina-ora-btn" onclick="ScrollToId('gioco-sec')">Gioca ora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <section class="sezione my-0 pt-5 pb-3 cover-orecchino-spec" id="prodotto-sec">
+            <div class="container" style="z-index: 1;">
+                <div class="row text-center">
+                    <div class="col-lg-6 col-md-4 col-12 position-relative d-flex align-items-center justify-content-center" style="z-index: 1;">
+                        <div class="w-100">
+                            <h3>Ti ricordiamo che hai acquistato:</h3>
+                            <h1 id="titolo-prod" class="transizione-titolo-sezione" style="font-size: 3.5em;"></h1>
+                            <div class="d-none d-lg-block my-5">
+                                <h2>Il significato</h2>
+                                <p class="sign-desc">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-12 position-relative mb-5 d-flex align-items-center justify-content-center">
+                        <div class="container-orecc-spec" style="z-index: 0;"></div>
+                        <img id="img-prod" src="" class="w-75" style="z-index: 2; position: relative;">
+                    </div>
+                    <div class="d-lg-none px-5" style="z-index: 1; position: relative;">
+                        <h2>Il significato</h2>
+                        <p class="sign-desc">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="packaging-sec">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-md-8 col-10 mx-auto">
+                    <h1 class="titoloSezione">Hai visto che bello il packaging?</h1>
+                    <p>Vogliamo assicurarci che il tuo acquisto sia un'esperienza indimenticabile dalla A alla Z. Ecco perché ti invitiamo a controllare attentamente il packaging del tuo gioiello, per assicurarti che nulla sia stato perso durante la spedizione.
+                    </p>
+                    <p>Inoltre, vogliamo che tu sia sorpreso e meravigliato ogni volta che apri il tuo pacchetto. Per questo motivo, abbiamo incluso una serie di sorprese all'interno del packaging, che ti faranno sentire speciale e apprezzato. Non vediamo
+                        l'ora che tu scopra tutte le sorprese che abbiamo preparato per te! Ricorda sempre di controllare il packaging per non perdere nulla di questa emozionante esperienza.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-7 my-5 transizione-divisore">
+                <div class="divisore"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="gioco-sec">
+        <div class="container text-center py-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10 mx-auto mb-4">
+                    <h1 class="titoloSezione">Giochiamo?<br>Ti aspetta un buono sconto</h1>
+                </div>
+                <div class="col-md-4 col-10 mx-auto mb-5">
+                    <div><i class="fas fa-eye fa-4x"></i></div>
+                    <h3 class="mt-4">Scegli la difficoltà della sfida</h3>
+                </div>
+                <div class="col-md-4 col-10 mx-auto mb-5">
+                    <div><i class="fas fa-hammer fa-4x"></i></div>
+                    <h3 class="mt-4">Svolgi il problema</h3>
+                </div>
+                <div class="col-md-4 col-10 mx-auto mb-5">
+                    <div><i class="fas fa-money-bill fa-4x"></i></div>
+                    <h3 class="mt-4">Riscatta un goloso buono</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-11 col-md-9 col-lg-8 text-center mx-auto">
+                    <h1 class="titoloSezione">Scegli la difficoltà</h1>
+                    <p>Preparati a un'emozionante sfida scientifica! Scegli la difficoltà che preferisci e metti alla prova le tue conoscenze di fisica, matematica e scienze con un unico, intrigante problema.<br>Se la tua soluzione sarà corretta e rapida,
+                        ti premieremo con un buono sconto esclusivo per il tuo prossimo acquisto nello shop. Ma attenzione, non c'è margine di errore: una sola risposta sbagliata o un tempo scaduto significheranno che non potrai più partecipare. Questa
+                        è la tua occasione per dimostrare la tua abilità scientifica!</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row mx-1 mx-sm-0">
+                    <div class="col-lg-4 col-md-6 col-12 text-center pb-5 pb-md-0">
+                        <div class="difficoltà-box base my-3">
+                            <h2 class="transizione-testo-prodotti">Base</h2>
+                            <p class="transizione-testo-prodotti">Sfida le tue conoscenze di matematica e fisica con semplici calcoli e equazioni elementari.</p>
+                            <span class="discount">5%</span>
+                            <button type="submit" class="btn-lg btn-dark" id="gioca-1-warn-bt">Gioca</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 text-center pb-5 pb-md-0">
+                        <div class="difficoltà-box pro my-3">
+                            <h2 class="transizione-testo-prodotti">Pro</h2>
+                            <p class="transizione-testo-prodotti">Metti alla prova le tue capacità con problemi di matematica e fisica più complessi.</p>
+                            <span class="discount">7%</span>
+                            <button type="submit" class="btn-lg btn-dark" id="gioca-2-warn-bt">Gioca</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-10 col-12 mx-auto pb-5 pb-md-0">
+                        <div class="difficoltà-box genio my-3">
+                            <h2 class="transizione-testo-prodotti">Genio</h2>
+                            <p class="transizione-testo-prodotti">Affronta la sfida più difficile con problemi di matematica e fisica avanzati, degni di uno studente universitario.</p>
+                            <span class="discount">10%</span>
+                            <button type="submit" class="btn-lg btn-dark" id="gioca-3-warn-bt">Gioca</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div id="gioca-warn-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-warn-bt" class="close-button m-0 p-0"><i class="fa fa-times-circle"></i></button>
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-12 col-md-9 col-lg-6 mb-2 mt-1">
+                        <h2>Che materia preferisci?</h2>
+                    </div>
+                    <div class="col-12 pb-5 pb-md-0 big-button">
+                        <button id="materia-mat" class="transizione-testo-prodotti">Matematica</button>
+                        <button id="materia-fis" class="transizione-testo-prodotti">Fisica</button>
+                        <button id="materia-sci" class="transizione-testo-prodotti">Scienze</button>
+                    </div>
+                    <div class="form-check mt-4 mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="gioca-check" style="transform: scale(2);" onchange="document.getElementById('gioca-bt').disabled = !this.checked">
+                        <label class="form-check-label text-left pl-2" for="gioca-check">
+                            Ho capito che avrò solo un tentativo, e che dovrò dare la risposta esatta nel tempo prefissato.
+                        </label>
+                    </div>
+                    <button type="submit" id="gioca-bt" class="btn-lg btn-dark w-100" disabled>Gioca</button>
+                    <div id="probl-comp" class="mt-4" style="display: none;">
+                        <i class="fa fa-exclamation-circle text-danger"></i>
+                        <p class="text-dark my-0 ml-2">Ops, sembra che hai già provato a svolgere il problema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ord-es" class="overlay-progress">
+        <div id="spin-ord-es" class="loader"></div>
+        <div id="ord-nes" class="text-center d-none">
+            <i class="fas fa-exclamation-triangle fa-10x mb-4" style="color: rgb(255, 183, 0)"></i>
+            <h1>L'ordine non esiste</h1>
+            <p>Sembra che l'ordine associato a questa pagina non esista.<br>Se pensi che ci sisa stato un errore, contatta l'assistenza</p>
+            <button id="contatti-bt-1" class="btn btn-warning mt-2">Contatta l'assistenza</button>
+            <div style="height: 100px;"></div>
+        </div>
+        <div id="ord-err" class="text-center d-none">
+            <i class="fas fa-ban fa-10x mb-4" style="color: red"></i>
+            <h1>C'è stato un errore</h1>
+            <p>Sembra che si sia verificato un errore.<br>Prova ad aggiornare la pagina, o contattaci per assistenza.</p>
+            <h3 id="ord-err-t" class="d-none">Codice errore: <span id="ord-err-code"></span></h3>
+            <button id="contatti-bt-2" class="btn btn-danger mt-2">Contatta l'assistenza</button>
+            <div style="height: 100px;"></div>
+        </div>
+
+        <div id="contatti-modal" class="modal">
+            <div class="modal-content">
+                <button id="close-contatti-bt" class="close-button m-0 p-0"><i class="fa fa-times-circle"></i></button>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-9 col-lg-6">
+                            <h3 class="text-center">Contattami</h3>
+                            <p class="text-center">Ciao! Se hai bisogno di parlare con me per qualsiasi cosa, sia che si tratti di domande o semplicemente per connetterti, non esitare a inviarmi un'email o un messaggio! Sarò felice di sentirti.</p>
+                        </div>
+                        <div class="col-md-7 col-12 pt-3 text-center text-md-left">
+                            <p><strong>Email:</strong> <a href="">info@conebrutto.com</a></p>
+                            <p><strong>Numero di telefono:</strong> <a href="">123-456-7890</a></p>
+                        </div>
+                        <div class="col-md-4 col-12 social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--i prodotti
+    <section class="cards sezione pt-3 px-3 mt-0" style="overflow: hidden;">
+        <h1 class="text-white titoloSezione transizione-titolo-sezione">I nostri prodotti</h1>
+        <div class="container-fluid text-center" style="max-width: 1408px;">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-5 px-0 order-0 transizione-img-dod-r">
+                    <div class="card align-items-center">
+                        <img src="https://i.pinimg.com/originals/7e/a5/ea/7ea5ea2c331e4bc76e3e96701bbb5a9a.jpg" class="card-img-top" alt="immagine1">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 col-12 text-white px-0 px-lg-3 order-sm-1 order-lg-0 order-md-2">
+                    <div class="row no-gutters d-flex justify-content-center align-items-center text-white bx-0 mx-0">
+                        <div class="col-9 col-md-12 col-lg-12">
+                            <h2 class="py-3 transizione-testo-prodotti">Caratteristiche dei gioielli</h2>
+                            <p class="transizione-testo-prodotti">I nostri gioielli sono realizzati con materiali di alta qualità, come oro e argento, e sono ispirati alle forme e ai modelli della natura e dell'universo. Crediamo che la bellezza della scienza debba essere condivisa con il
+                                mondo, e vogliamo che le persone si sentano belle e intelligenti indossando i nostri gioielli.</p>
+                            <p class="transizione-testo-prodotti">Per prenderti cura dei tuoi gioielli, ti consigliamo di evitare di indossarli durante attività che potrebbero graffiarli o danneggiarli, come fare sport o fare la doccia. Inoltre, è sempre meglio conservare i gioielli in un
+                                luogo asciutto e al riparo dalla luce diretta.</p>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-flex justify-content-center align-items-center pb-5 pt-2 bx-0 mx-0">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn transizione-btn">Ordina ora</button>
+                            <button type="submit" class="btn btn-outline-light d-inline ml-3 transizione-btn" id="scopri-btn-dod">Scopri di più</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 px-0 order-sm-2 order-md-1 transizione-img-dod-l">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6s95-ADaPulxt77n5D-MdJg0fcIWHmVAjaHTzIWOwCRmNXaAaK1oyAcmkPyMztzWd35g&usqp=CAU" class="card-img-top" alt="immagine5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-7 my-5 transizione-divisore">
+                    <div class="divisore"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center pb-3" style="max-width: 1408px;">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-5 col-12 px-0 pl-lg-3 text-white order-0 testoBianco">
+                    <div class="row no-gutters d-flex justify-content-center align-items-center text-white bx-0 mx-0">
+                        <div class="col-9 col-md-12 col-lg-12">
+                            <h2 class="py-3 transizione-testo-prodotti">Caratteristiche dei gioielli</h2>
+                            <p class="transizione-btn">I nostri gioielli sono realizzati con materiali di alta qualità, come oro e argento, e sono ispirati alle forme e ai modelli della natura e dell'universo. Crediamo che la bellezza della scienza debba essere condivisa con il
+                                mondo, e vogliamo che le persone si sentano belle e intelligenti indossando i nostri gioielli.</p>
+                            <p class="transizione-btn">Per prenderti cura dei tuoi gioielli, ti consigliamo di evitare di indossarli durante attività che potrebbero graffiarli o danneggiarli, come fare sport o fare la doccia. Inoltre, è sempre meglio conservare i gioielli in un
+                                luogo asciutto e al riparo dalla luce diretta.</p>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-flex justify-content-center align-items-center pb-5 pt-2 bx-0 mx-0">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn transizione-btn">Ordina ora</button>
+                            <button type="submit" class="btn btn-outline-light d-inline ml-3 transizione-btn" id="scopri-btn-e">Scopri di più</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 pl-lg-5 px-0 order-sm-1 order-lg-0 order-md-2 transizione-img-E-l">
+                    <div class="card align-content-center align-items-center align-self-center align-middle">
+                        <img src="https://i.pinimg.com/originals/7e/a5/ea/7ea5ea2c331e4bc76e3e96701bbb5a9a.jpg" class="card-img-top" alt="immagine1">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 px-0 ml-lg-0 pl-md-5 pl-lg-1 order-sm-2 order-md-1">
+                    <div class="transizione-img-E-t my-md-4">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6s95-ADaPulxt77n5D-MdJg0fcIWHmVAjaHTzIWOwCRmNXaAaK1oyAcmkPyMztzWd35g&usqp=CAU" class="card-img-top" alt="immagine5">
+                        </div>
+                    </div>
+                    <div class="transizione-img-E-b my-md-4">
+                        <div class="card my-4">
+                            <img src="https://i.pinimg.com/originals/7e/a5/ea/7ea5ea2c331e4bc76e3e96701bbb5a9a.jpg" class="card-img-top" alt="immagine1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sezione pb-4 px-3 pt-0 mt-0" style="background-color: white;">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-7 mt-0 mb-5 transizione-divisore">
+                    <div class="divisore"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center d-none d-md-block mt-3" style="max-width: 1408px; background-color: white;">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-3 transizione-img-pc-bl">
+                    <div style="transform: rotate(-30deg) scaleX(-1);">
+                        <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                    </div>
+                </div>
+                <div class="col-6 px-0 mx-0">
+                    <div class="container-fluid">
+                        <div class="transizione-img-pc-tl">
+                            <div class="float-left pb-3" style="width: 46%; display: inline-block; transform: rotate(-10deg) scaleX(-1);">
+                                <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                            </div>
+                        </div>
+                        <div class="transizione-img-pc-tr">
+                            <div class="float-right pb-3" style="width: 46%; display: inline-block; transform: rotate(10deg);">
+                                <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-lg-5 p-md-3">
+                        <h2 class="py-3 transizione-testo-prodotti">Caratteristiche dei gioielli</h2>
+                        <p class="transizione-testo-prodotti">I nostri gioielli sono realizzati con materiali di alta qualità, come oro e argento, e sono ispirati alle forme e ai modelli della natura e dell'universo. Crediamo che la bellezza della scienza debba essere condivisa con il mondo,
+                            e vogliamo che le persone si sentano belle e intelligenti indossando i nostri gioielli.</p>
+                        <p class="transizione-testo-prodotti">Per prenderti cura dei tuoi gioielli, ti consigliamo di evitare di indossarli durante attività che potrebbero graffiarli o danneggiarli, come fare sport o fare la doccia. Inoltre, è sempre meglio conservare i gioielli in un luogo
+                            asciutto e al riparo dalla luce diretta.</p>
+                        <div class="row no-gutters d-flex justify-content-center align-items-center pb-5 pt-2 bx-0 mx-0">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-dark d-inline mr-3 ordina-ora-btn transizione-btn">Ordina ora</button>
+                                <button type="submit" class="btn btn-outline-dark d-inline ml-3 transizione-btn" id="scopri-btn-pc-l">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 transizione-img-pc-br">
+                    <div style="transform: rotate(30deg);">
+                        <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center d-block d-md-none" style="max-width: 1408px; background-color: white;">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-6 px-1 py-1 transizione-img-pc-tl">
+                    <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                </div>
+                <div class="col-6 px-1 py-1 transizione-img-pc-tr">
+                    <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                </div>
+                <div class="col-6 px-1 py-1 transizione-img-pc-bl">
+                    <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                </div>
+                <div class="col-6 px-1 py-1 transizione-img-pc-br">
+                    <img src="https://banner2.cleanpng.com/20180420/dlq/kisspng-key-chains-promotional-merchandise-deal-gate-enter-keychains-5ad99c893eab36.5490016115242108252567.jpg" class="card-img-top" alt="immagine1">
+                </div>
+                <div class="col-12 px-0">
+                    <div class="row no-gutters d-flex justify-content-center align-items-center bx-0 mx-0">
+                        <div class="col-9 col-md-12 col-lg-12">
+                            <h2 class="py-3 transizione-testo-prodotti">Caratteristiche dei gioielli</h2>
+                            <p class="transizione-testo-prodotti">I nostri gioielli sono realizzati con materiali di alta qualità, come oro e argento, e sono ispirati alle forme e ai modelli della natura e dell'universo. Crediamo che la bellezza della scienza debba essere condivisa con il
+                                mondo, e vogliamo che le persone si sentano belle e intelligenti indossando i nostri gioielli.</p>
+                            <p class="transizione-testo-prodotti">Per prenderti cura dei tuoi gioielli, ti consigliamo di evitare di indossarli durante attività che potrebbero graffiarli o danneggiarli, come fare sport o fare la doccia. Inoltre, è sempre meglio conservare i gioielli in un
+                                luogo asciutto e al riparo dalla luce diretta.</p>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-flex justify-content-center align-items-center pb-5 pt-2 bx-0 mx-0">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark d-inline mr-3 ordina-ora-btn transizione-btn">Ordina ora</button>
+                            <button type="submit" class="btn btn-outline-dark d-inline ml-3 transizione-btn" id="scopri-btn-pc-s">Scopri di più</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-7 mt-0 mb-5 transizione-divisore">
+                    <div class="divisore"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fixed-bg">
+        <div class="overlay-med"></div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-9 col-md-7 col-lg-5">
+                <h2 class="transizione-testo-prodotti">Caratteristiche dei gioielli</h2>
+                <p class="transizione-testo-prodotti">I nostri gioielli sono realizzati con materiali di alta qualità, come oro e argento, e sono ispirati alle forme e ai modelli della natura e dell'universo. Crediamo che la bellezza della scienza debba essere condivisa con il mondo, e vogliamo
+                    che le persone si sentano belle e intelligenti indossando i nostri gioielli.</p>
+                <p class="transizione-testo-prodotti">Per prenderti cura dei tuoi gioielli, ti consigliamo di evitare di indossarli durante attività che potrebbero graffiarli o danneggiarli, come fare sport o fare la doccia. Inoltre, è sempre meglio conservare i gioielli in un luogo asciutto
+                    e al riparo dalla luce diretta.</p>
+            </div>
+        </div>
+        <div class="row no-gutters d-flex justify-content-center align-items-center pb-5 pt-2 bx-0 mx-0">
+            <div class="col-12 pb-5">
+                <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn transizione-btn">Ordina ora</button>
+                <button type="submit" class="btn btn-outline-light d-inline ml-3 transizione-btn" id="scopri-btn-med">Scopri di più</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-7 mt-0 mb-5 transizione-divisore">
+                    <div class="divisore"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--il team
+    <section class="py-5" style="background-color: black;">
+        <h1 class="text-white titoloSezione transizione-titolo-sezione">Il nostro team</h1>
+        <div class="container text-white">
+            <div class="row d-flex justify-content-center py-5 mx-1 mx-sm-0" style="border-radius: 20px;box-shadow: 0px 0px 10px 0px linear-gradient(to right, #ffbb00de, rgb(34, 34, 191));box-shadow: 0 0 10px #D4AF37;background-color: black;">
+                <div class="col-md-3 col-10 text-center pb-5 pb-md-0">
+                    <img src="https://media.istockphoto.com/id/693656148/it/vettoriale/avatar-di-un-uomo-con-i-capelli-rossi-avatar-e-faccia-singola-icona-in-stile-cartone.jpg?s=612x612&w=is&k=20&c=6yu-ejVKNhhDRCqLg-jZ5cOTLLBKFfH6NTPBlsLWpWU=" class="
+                        w-75 rounded-circle m-4 transizione-testo-prodotti">
+                    <h2 class="transizione-testo-prodotti">Alessio Antonucci</h2>
+                    <button id="contact-btn-a" type="submit" class="btn btn-outline-light transizione-btn">Contattami</button>
+                </div>
+                <div class="col-md-7 col-12 d-flex align-items-center">
+                    <div class="row p-0 m-0 d-flex justify-content-end">
+                        <div class="col-11">
+                            <h4 class="transizione-testo-prodotti">Biografia</h4>
+                            <p class="transizione-testo-prodotti">Sono un ingegnere informatico di New York con una passione per la tecnologia e l'innovazione. Ho conseguito una laurea a Stanford e ho lavorato per grandi aziende tech. Attualmente, sto lanciando una start-up per rendere l'IA
+                                accessibile a tutti. Amo anche sport estremi e viaggiare alla scoperta di nuove avventure.</p>
+                            <h4 class="transizione-testo-prodotti">Cosa so fare</h4>
+                            <p class="transizione-testo-prodotti">Specializzato in ingegneria informatica con esperienza nello sviluppo di soluzioni tecnologiche all'avanguardia, mi dedico alla creazione di software innovativi e all'utilizzo dell'intelligenza artificiale per migliorare la
+                                vita delle persone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-white mt-4">
+            <div class="row d-flex justify-content-center py-5 mx-1 mx-sm-0" style="border-radius: 20px;box-shadow: 0px 0px 10px 0px linear-gradient(to right, #ffbb00de, rgb(34, 34, 191));box-shadow: 0 0 10px #D4AF37;background-color: black;">
+                <div class="col-md-3 col-10 text-center pb-5 pb-md-0">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/308471402/display_1500/stock-vector-profile-icon-female-avatar-woman-portrait-casual-person-silhouette-face-flat-design-vector-308471402.jpg" class="w-75 rounded-circle
+                        m-4 transizione-testo-prodotti">
+                    <h2 class="transizione-testo-prodotti">Giulia Antonucci</h2>
+                    <button id="contact-btn-g" type="submit" class="btn btn-outline-light transizione-btn">Contattami</button>
+                </div>
+                <div class="col-md-7 col-12 d-flex align-items-center">
+                    <div class="row p-0 m-0 d-flex justify-content-end">
+                        <div class="col-11">
+                            <h4 class="transizione-testo-prodotti">Biografia</h4>
+                            <p class="transizione-testo-prodotti">Sono un ingegnere informatico di New York con una passione per la tecnologia e l'innovazione. Ho conseguito una laurea a Stanford e ho lavorato per grandi aziende tech. Attualmente, sto lanciando una start-up per rendere l'IA
+                                accessibile a tutti. Amo anche sport estremi e viaggiare alla scoperta di nuove avventure.</p>
+                            <h4 class="transizione-testo-prodotti">Cosa so fare</h4>
+                            <p class="transizione-testo-prodotti">Specializzato in ingegneria informatica con esperienza nello sviluppo di soluzioni tecnologiche all'avanguardia, mi dedico alla creazione di software innovativi e all'utilizzo dell'intelligenza artificiale per migliorare la
+                                vita delle persone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-modal-a" class="modal">
+            <div class="modal-content">
+                <button id="close-btn-a" class="close-button m-0 p-0"><i class="fa fa-times-circle"></i></button>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-9 col-lg-6">
+                            <h3 class="text-center">Contattami</h3>
+                            <p class="text-center">Ciao! Se hai bisogno di parlare con me per qualsiasi cosa, sia che si tratti di domande o semplicemente per connetterti, non esitare a inviarmi un'email o un messaggio! Sarò felice di sentirti.</p>
+                        </div>
+                        <div class="col-md-7 col-12 pt-3 text-center text-md-left">
+                            <p><strong>Email:</strong> <a href="">info@esempio.com</a></p>
+                            <p><strong>Numero di telefono:</strong> <a href="">123-456-7890</a></p>
+                        </div>
+                        <div class="col-md-4 col-12 social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-modal-g" class="modal">
+            <div class="modal-content">
+                <button id="close-btn-g" class="close-button m-0 p-0"><i class="fa fa-times-circle"></i></button>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-9 col-lg-6">
+                            <h3 class="text-center">Contattami</h3>
+                            <p class="text-center">Ciao! Se hai bisogno di parlare con me per qualsiasi cosa, sia che si tratti di domande o semplicemente per connetterti, non esitare a inviarmi un'email o un messaggio! Sarò felice di sentirti.</p>
+                        </div>
+                        <div class="col-md-7 col-12 pt-3 text-center text-md-left">
+                            <p><strong>Email:</strong> <a href="">info@conebrutto.com</a></p>
+                            <p><strong>Numero di telefono:</strong> <a href="">123-456-7890</a></p>
+                        </div>
+                        <div class="col-md-4 col-12 social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Kick starter
+    <section class="py-5" id="kickstarter-section" style="overflow-x: hidden;">
+        <h1 class="titoloSezione transizione-testo-prodotti">Diventa parte di noi</h1>
+        <div class="container">
+            <div class="row d-flex justify-content-center pt-5 mx-1 mx-sm-0">
+                <div class="col-lg-4 col-md-6 col-11 text-center pb-5 pb-md-0">
+                    <div class="card bg-white">
+                        <div class="m-3">
+                            <img src="https://static.thenounproject.com/png/635047-200.png" class="w-25">
+                            <h2 class="transizione-testo-prodotti">Cos'è?</h2>
+                            <p class="transizione-testo-prodotti">Kickstarter è il luogo dove le idee diventano realtà! È una piattaforma di crowdfunding che ti permette di raccogliere fondi per i tuoi progetti creativi, dalla musica alla tecnologia, dalle arti visive al design. Con il supporto
+                                della community, puoi trasformare le tue idee in progetti concreti e portarli al successo. Partecipa alla magia di Kickstarter e vedi i tuoi sogni prendere vita!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-11 text-center pb-5 pb-md-0">
+                    <div class="card bg-white">
+                        <div class="m-3">
+                            <img src="data:image/png;base64,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"
+                                class=" w-25">
+                            <h2 class="transizione-testo-ks-1">Come funziona?</h2>
+                            <p class="transizione-testo-ks-1">Kickstarter è la scelta perfetta per lanciare il nostro brand in quanto è una piattaforma leader nel crowdfunding creativo, che ci permetterà di raggiungere una vasta comunità di persone appassionate e di ottenere il supporto
+                                finanziario per portare i nostri progetti in vita. Con Kickstarter, potremo condividere la nostra visione con il mondo e creare una comunità di sostenitori fedeli per il nostro marchio. Non vediamo l'ora di iniziare questa
+                                avventura con voi!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-10 col-11 text-center pb-5 pb-md-0">
+                    <div class="card bg-white">
+                        <div class="m-3">
+                            <img src="data:image/png;base64,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"
+                                class=" w-25">
+                            <h2 class="transizione-testo-ks-2">Vantaggi?</h2>
+                            <p class="transizione-testo-ks-2">Kickstarter è la piattaforma ideale per lanciare il nostro brand, perché ci consente di raggiungere una vasta comunità di potenziali clienti e supporters entusiasti. Grazie alla sua popolarità, possiamo presentare il nostro
+                                prodotto a un pubblico ampio e coinvolgere attivamente i nostri supporter nella creazione del nostro brand. Inoltre, offre la possibilità di raccogliere fondi e creare una base solida per il lancio del nostro progetto.
+                                Per i clienti e supporters è un'opportunità unica per diventare parte integrante del processo creativo e ottenere accesso esclusivo ai nostri prodotti prima del lancio ufficiale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="scegli-dona" class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3 col-7 mt-0 mb-5 transizione-divisore">
+                            <div class="divisore"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center pb-5 mx-1 mx-sm-0 text-center align-items-center">
+                    <div class="col-10 col-md-5 col-lg-3 transizione-testo-prodotti">
+                        <img src="https://previews.123rf.com/images/creativepriyanka/creativepriyanka2001/creativepriyanka200100062/137079852-icon-for-revenue-income.jpg" class="w-50">
+                        <h1>Scegli quanto donare:</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container-dona" style="overflow: hidden;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="dona-0">
+                    <div class="overflow-h">
+                        <div class="text-center container mt-5 mb-0 pb-0 d-block">
+                            <h2 class="m-0 p-0">Dona</h2>
+                            <p class="font-weight-bold pb-0 mb-0 transizione-titolo-sezione" style="font-size: 13em; margin-top: -60px;"><span style="font-size: 2rem;">€</span>10</p>
+                        </div>
+                        <div class="row d-flex justify-content-center pb-4 mx-1 mx-sm-0 text-center" style="margin-top: -170px;">
+                            <div class="col-md-9 col-12 pb-3 pb-md-0">
+                                <h2>Ricevi</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-center my-1 text-lg-center text-right align-items-center">
+                                    <div class="col-md-2 col-3 pb-5 pb-md-0 order-0 text-center">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/earring-106438.png" class="w-100 transizione-testo-prodotti">
+                                    </div>
+                                    <div class="col-md-10 col-lg-12 col-9 pb-5 pb-md-0 order-1">
+                                        <div class="row d-flex justify-content-center m-0 p-0">
+                                            <div class="col-lg-8 col-12">
+                                                <h3 class="transizione-testo-prodotti">Orecchino che più desideri</h3>
+                                                <p class="transizione-testo-prodotti">Svela il tuo lato più fashion con la nostra esclusiva offerta: scegli l'orecchino che più rappresenta te tra una vasta gamma di disegni unici e originali. Non lasciarti sfuggire questa occasione unica per
+                                                    arricchire il tuo look!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="dona-1">
+                    <div class="overflow-h">
+                        <div class="text-center container mt-5 mb-0 pb-0 d-block">
+                            <h2 class="m-0 p-0">Dona</h2>
+                            <p class="font-weight-bold pb-0 mb-0 transizione-titolo-sezione" style="font-size: 13em; margin-top: -60px;"><span style="font-size: 2rem;">€</span>20</p>
+                        </div>
+                        <div class="row d-flex justify-content-center pb-4 mx-1 mx-sm-0 text-center" style="margin-top: -170px;">
+                            <div class="col-md-9 col-12 pb-3 pb-md-0">
+                                <h2>Ricevi</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-center my-1 text-left align-items-center">
+                                    <div class="col-md-2 col-3 pb-5 pb-md-0 order-1">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/earring-106438.png" class="w-100 transizione-testo-prodotti">
+                                    </div>
+                                    <div class="col-md-10 col-lg-4 col-9 pb-5 pb-md-0 order-0 text-right">
+                                        <h3 class="transizione-testo-prodotti">Orecchino che più desideri</h3>
+                                        <p class="transizione-testo-prodotti">Svela il tuo lato più fashion con la nostra esclusiva offerta: scegli l'orecchino che più rappresenta te tra una vasta gamma di disegni unici e originali. Non lasciarti sfuggire questa occasione unica per arricchire
+                                            il tuo look!</p>
+                                    </div>
+
+                                    <div class="col-md-2 col-3 pb-5 pb-md-0 order-2">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/earring-106438.png" class="w-100 transizione-testo-prodotti">
+                                    </div>
+                                    <div class="col-md-10 col-lg-4 col-9 pb-5 pb-md-0 order-3 text-left">
+                                        <h3 class="transizione-testo-prodotti">Orecchino che più desideri</h3>
+                                        <p class="transizione-testo-prodotti">Svela il tuo lato più fashion con la nostra esclusiva offerta: scegli l'orecchino che più rappresenta te tra una vasta gamma di disegni unici e originali. Non lasciarti sfuggire questa occasione unica per arricchire
+                                            il tuo look!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="dona-2">
+                    <div class="overflow-h">
+                        <div class="text-center container mt-5 mb-0 pb-0 d-block">
+                            <h2 class="m-0 p-0">Dona</h2>
+                            <p class="font-weight-bold pb-0 mb-0 transizione-titolo-sezione" style="font-size: 13em; margin-top: -60px;"><span style="font-size: 2rem;">€</span>35</p>
+                        </div>
+                        <div class="row d-flex justify-content-center pb-4 mx-1 mx-sm-0 text-center" style="margin-top: -170px;">
+                            <div class="col-md-9 col-12 pb-3 pb-md-0">
+                                <h2>Ricevi</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-center my-1 text-left align-items-center">
+                                    <div class="col-md-2 col-3 pb-5 pb-md-0 order-1">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/earring-106438.png" class="w-100 transizione-testo-prodotti">
+                                    </div>
+                                    <div class="col-md-10 col-lg-4 col-9 pb-5 pb-md-0 order-0 text-right">
+                                        <h3 class="transizione-testo-prodotti">Orecchino che più desideri</h3>
+                                        <p class="transizione-testo-prodotti">Svela il tuo lato più fashion con la nostra esclusiva offerta: scegli l'orecchino che più rappresenta te tra una vasta gamma di disegni unici e originali. Non lasciarti sfuggire questa occasione unica per arricchire
+                                            il tuo look!</p>
+                                    </div>
+
+                                    <div class="col-md-2 col-3 pb-5 pb-md-0 order-2">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/earring-106438.png" class="w-100 transizione-testo-prodotti">
+                                    </div>
+                                    <div class="col-md-10 col-lg-4 col-9 pb-5 pb-md-0 order-3 text-left">
+                                        <h3 class="transizione-testo-prodotti">Orecchino che più desideri</h3>
+                                        <p class="transizione-testo-prodotti">Svela il tuo lato più fashion con la nostra esclusiva offerta: scegli l'orecchino che più rappresenta te tra una vasta gamma di disegni unici e originali. Non lasciarti sfuggire questa occasione unica per arricchire
+                                            il tuo look!</p>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center my-1 text-lg-center text-right align-items-center">
+                                    <div class="col-md-2 col-3 pb-5 pb-md-0 order-1 text-center">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/earring-106438.png" class="w-100 transizione-testo-prodotti">
+                                    </div>
+                                    <div class="col-md-10 col-lg-12 col-9 pb-5 pb-md-0 order-0">
+                                        <div class="row d-flex justify-content-center m-0 p-0">
+                                            <div class="col-lg-8 col-12">
+                                                <h3 class="transizione-testo-prodotti">Orecchino che più desideri</h3>
+                                                <p class="transizione-testo-prodotti">Svela il tuo lato più fashion con la nostra esclusiva offerta: scegli l'orecchino che più rappresenta te tra una vasta gamma di disegni unici e originali. Non lasciarti sfuggire questa occasione unica per
+                                                    arricchire il tuo look!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.kickstarter.com" target="_blank">
+                <button class="btn btn-dark btn-lg mt-5 transizione-btn">Dona adesso</button>
+            </a>
+        </div>
+    </section>
+
+    <!--roadmap
+    <section class="py-5 overflow-h" style="background-color: black; user-select: none;">
+        <h1 class="titoloSezione text-white pb-3 transizione-titolo-sezione">Roadmap</h1>
+        <div class="swiper-container text-white text-center pt-5 scroll-timeline overflow-x-h transizione-testo-prodotti" style="overflow: visible;">
+            <div class="swiper-wrapper" style="overflow: visible;">
+                <div class="swiper-slide">
+                    <div class="container-timeline">
+                        <div class="side-line-timeline"></div>
+                        <div class="bar-timeline"></div>
+                        <div class="point-timeline point-pos-bl">
+                            <span class="number-timeline">1</span>
+                        </div>
+                        <div class="line-timeline">
+                            <span class="text-timeline justify-content-center">Marzo</span>
+                        </div>
+                        <div class="point-timeline point-pos-r">
+                            <span class="number-timeline">13</span>
+                        </div>
+                        <div class="side-line-timeline"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center my-4 pt-5">
+                            <div class="col-12 col-md-4 transizione-testo-prodotti">
+                                <h1 class="icona-processo">📣</h1>
+                                <h1 class="titolo-processo p-md-0">Prelancio</h1>
+                            </div>
+                            <div class="col-9 col-md-7 ml-md-3 text-md-left transizione-testo-prodotti">
+                                <p class="m-0">La fase attuale della campagna nel calendario è quella del lancio ufficiale! Siamo entusiasti di presentare il nostro nuovo prodotto a tutti voi e non vediamo l'ora di condividere la nostra visione con il mondo. Durante
+                                    questa fase, avrete l'opportunità di essere i primi a pre-ordinare il prodotto a un prezzo speciale di lancio. Non perdete l'occasione di essere tra i primi ad avere il nostro prodotto nuovo di zecca! Inoltre, parteciperete
+                                    anche alla nostra campagna di crowdfunding creativo, dove potrete sostenere il nostro brand e diventare un membro della comunità dei sostenitori del nostro marchio. Non perdetevi questa emozionante avventura con noi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container-timeline" id="c1">
+                        <div class="container-timeline w-50">
+                            <div class="side-line-timeline"></div>
+                            <div class="point-timeline point-pos-l" id="p1">
+                                <span class="number-timeline" id="n1">14</span>
+                            </div>
+                            <div class="line-timeline">
+                                <span class="text-timeline justify-content-end">Marzo</span>
+                            </div>
+                            <div class="bar-timeline mr-3"></div>
+                        </div>
+                        <div class="container-timeline w-50">
+                            <div class="bar-timeline ml-3"></div>
+                            <div class="line-timeline">
+                                <span class="text-timeline justify-content-start">Aprile</span>
+                            </div>
+                            <div class="point-timeline point-pos-r" id="p-4">
+                                <span class="number-timeline" id="n-4">14</span>
+                            </div>
+                            <div class="side-line-timeline"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center my-4 pt-5">
+                            <div class="col-12 col-md-4 transizione-testo-prodotti">
+                                <h1 class="icona-processo">🏦</h1>
+                                <h1 class="titolo-processo p-md-0">Campagna</h1>
+                            </div>
+                            <div class="col-9 col-md-7 ml-md-3 text-md-left transizione-testo-prodotti">
+                                <p class="m-0">La fase attuale della campagna nel calendario è quella del lancio ufficiale! Siamo entusiasti di presentare il nostro nuovo prodotto a tutti voi e non vediamo l'ora di condividere la nostra visione con il mondo. Durante
+                                    questa fase, avrete l'opportunità di essere i primi a pre-ordinare il prodotto a un prezzo speciale di lancio. Non perdete l'occasione di essere tra i primi ad avere il nostro prodotto nuovo di zecca! Inoltre, parteciperete
+                                    anche alla nostra campagna di crowdfunding creativo, dove potrete sostenere il nostro brand e diventare un membro della comunità dei sostenitori del nostro marchio. Non perdetevi questa emozionante avventura con noi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container-timeline">
+                        <div class="container-timeline" style="width: 33%;">
+                            <div class="side-line-timeline"></div>
+                            <div class="point-timeline point-pos-l">
+                                <span class="number-timeline">15</span>
+                            </div>
+                            <div class="line-timeline">
+                                <span class="text-timeline justify-content-end">Aprile</span>
+                            </div>
+                            <div class="bar-timeline mr-3"></div>
+                        </div>
+                        <div class="container-timeline" style="width: 67%;">
+                            <div class="bar-timeline ml-3"></div>
+                            <div class="line-timeline">
+                                <span class="text-timeline justify-content-start">Maggio</span>
+                            </div>
+                            <div class="point-timeline point-pos-br">
+                                <span class="number-timeline">31</span>
+                            </div>
+                            <div class="bar-timeline"></div>
+                            <div class="side-line-timeline"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center my-4 pt-5">
+                            <div class="col-12 col-md-4 transizione-testo-prodotti">
+                                <h1 class="icona-processo">🛠</h1>
+                                <h1 class="titolo-processo p-md-0">Produzione</h1>
+                            </div>
+                            <div class="col-9 col-md-7 ml-md-3 text-md-left transizione-testo-prodotti">
+                                <p class="m-0">La fase attuale della campagna nel calendario è quella del lancio ufficiale! Siamo entusiasti di presentare il nostro nuovo prodotto a tutti voi e non vediamo l'ora di condividere la nostra visione con il mondo. Durante
+                                    questa fase, avrete l'opportunità di essere i primi a pre-ordinare il prodotto a un prezzo speciale di lancio. Non perdete l'occasione di essere tra i primi ad avere il nostro prodotto nuovo di zecca! Inoltre, parteciperete
+                                    anche alla nostra campagna di crowdfunding creativo, dove potrete sostenere il nostro brand e diventare un membro della comunità dei sostenitori del nostro marchio. Non perdetevi questa emozionante avventura con noi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container-timeline">
+                        <div class="side-line-timeline"></div>
+                        <div class="bar-timeline"></div>
+                        <div class="point-timeline point-pos-bl">
+                            <span class="number-timeline">1</span>
+                        </div>
+                        <div class="line-timeline">
+                            <span class="text-timeline justify-content-center">Giugno</span>
+                        </div>
+                        <div class="point-timeline point-pos-r">
+                            <span class="number-timeline">10</span>
+                        </div>
+                        <div class="side-line-timeline"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center my-4 pt-5 no-gutters">
+                            <div class="col-12 col-md-4 mr-md-3 transizione-testo-prodotti">
+                                <h1 class="icona-processo">📦</h1>
+                                <h1 class="titolo-processo p-md-0">Imballaggio</h1>
+                            </div>
+                            <div class="col-9 col-md-7 ml-md-3 text-md-left transizione-testo-prodotti">
+                                <p class="m-0">La fase attuale della campagna nel calendario è quella del lancio ufficiale! Siamo entusiasti di presentare il nostro nuovo prodotto a tutti voi e non vediamo l'ora di condividere la nostra visione con il mondo. Durante
+                                    questa fase, avrete l'opportunità di essere i primi a pre-ordinare il prodotto a un prezzo speciale di lancio. Non perdete l'occasione di essere tra i primi ad avere il nostro prodotto nuovo di zecca! Inoltre, parteciperete
+                                    anche alla nostra campagna di crowdfunding creativo, dove potrete sostenere il nostro brand e diventare un membro della comunità dei sostenitori del nostro marchio. Non perdetevi questa emozionante avventura con noi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container-timeline margine-giugno">
+                        <div class="side-line-timeline"></div>
+                        <div class="point-timeline point-pos-l">
+                            <span class="number-timeline">11</span>
+                        </div>
+                        <div class="line-timeline">
+                            <span class="text-timeline justify-content-center">Giugno</span>
+                        </div>
+                        <div class="point-timeline point-pos-r">
+                            <span class="number-timeline">15</span>
+                        </div>
+                        <div class="side-line-timeline"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center my-4 pt-5 no-gutters">
+                            <div class="col-12 col-md-4 mr-md-3 transizione-testo-prodotti">
+                                <h1 class="icona-processo">🚚</h1>
+                                <h1 class="titolo-processo p-md-0">Spedizione</h1>
+                            </div>
+                            <div class="col-9 col-md-7 ml-md-3 text-md-left transizione-testo-prodotti">
+                                <p class="m-0">La fase attuale della campagna nel calendario è quella del lancio ufficiale! Siamo entusiasti di presentare il nostro nuovo prodotto a tutti voi e non vediamo l'ora di condividere la nostra visione con il mondo. Durante
+                                    questa fase, avrete l'opportunità di essere i primi a pre-ordinare il prodotto a un prezzo speciale di lancio. Non perdete l'occasione di essere tra i primi ad avere il nostro prodotto nuovo di zecca! Inoltre, parteciperete
+                                    anche alla nostra campagna di crowdfunding creativo, dove potrete sostenere il nostro brand e diventare un membro della comunità dei sostenitori del nostro marchio. Non perdetevi questa emozionante avventura con noi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container-timeline" style="padding-top: 5px;">
+                        <div class="side-line-timeline d-flex w-100"></div>
+                        <div class="point-timeline text-center" style="height: 30px; width: 60px; position: relative;">
+                            <span class="text-timeline overlap-text-timeline" style="margin-top: -62.5px;">Giugno</span>
+                            <span class="number-timeline overlap-text-timeline" style="margin-top: 50px;">15</span>
+                        </div>
+                        <div class="side-line-timeline d-flex w-100"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center my-4 pt-5 no-gutters">
+                            <div class="col-12 col-md-4 mr-md-3 transizione-testo-prodotti">
+                                <h1 class="icona-processo">🏡</h1>
+                                <h1 class="titolo-processo p-md-0">Consegna</h1>
+                            </div>
+                            <div class="col-9 col-md-7 ml-md-3 text-md-left transizione-testo-prodotti">
+                                <p class="m-0">La fase attuale della campagna nel calendario è quella del lancio ufficiale! Siamo entusiasti di presentare il nostro nuovo prodotto a tutti voi e non vediamo l'ora di condividere la nostra visione con il mondo. Durante
+                                    questa fase, avrete l'opportunità di essere i primi a pre-ordinare il prodotto a un prezzo speciale di lancio. Non perdete l'occasione di essere tra i primi ad avere il nostro prodotto nuovo di zecca! Inoltre, parteciperete
+                                    anche alla nostra campagna di crowdfunding creativo, dove potrete sostenere il nostro brand e diventare un membro della comunità dei sostenitori del nostro marchio. Non perdetevi questa emozionante avventura con noi!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-btn-next-tl"><i class="fa fa-arrow-right"></i></div>
+            <div class="swiper-btn-prev-tl"><i class="fa fa-arrow-left"></i></div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-7 my-5 transizione-divisore">
+                    <div class="divisore"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="timer" class="row d-flex justify-content-around align-items-center m-0 p-0 no-gutters text-center text-white mt-5 transizione-testo-prodotti">
+            <div class="text-center text-sm-left text-md-center">
+                <h1>Affrettati!</h1>
+                <h2>Mancano solo</h2>
+            </div>
+            <div class="timer-container">
+                <div class="card timer-box p-2 mx-3">
+                    <span id="days" class="timer-numeri"></span>
+                    <span class="timer-testo">giorni</span>
+                </div>
+                <div class="card timer-box p-2 mx-3">
+                    <span id="hours" class="timer-numeri"></span>
+                    <span class="timer-testo">ore</span>
+                </div>
+                <div class="card timer-box p-2 mx-3">
+                    <span id="minutes" class="timer-numeri"></span>
+                    <span class="timer-testo">minuti</span>
+                </div>
+                <div class="card timer-box p-2 mx-3">
+                    <span id="seconds" class="timer-numeri"></span>
+                    <span class="timer-testo">secondi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ
+    <section>
+        <h1 class="titoloSezione pb-3 transizione-titolo-sezione">FAQ</h1>
+        <div class="container-fluid pb-4" style="max-width: 1500px;">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="faq transizione-testo-prodotti">
+                        <div class="question">
+                            <h3>Qual è il vostro processo di consegna?</h3>
+                        </div>
+                        <div class="answer">
+                            <p>Il nostro processo di consegna prevede di spedire i prodotti entro 2-3 giorni lavorativi dalla ricezione del pagamento.
+                                <br>La consegna avverrà tramite corriere espresso e richiederà in media 3-5 giorni lavorativi.</p>
+                        </div>
+                    </div>
+                    <div class="faq transizione-testo-prodotti">
+                        <div class="question">
+                            <h3>Quali sono le modalità di pagamento accettate?</h3>
+                        </div>
+                        <div class="answer">
+                            <p>Accettiamo pagamenti tramite carta di credito, bonifico bancario e PayPal.</p>
+                        </div>
+                    </div>
+                    <div class="faq transizione-testo-prodotti">
+                        <div class="question">
+                            <h3>Quali sono le vostre politiche di restituzione?</h3>
+                        </div>
+                        <div class="answer">
+                            <p>Accettiamo resi entro 30 giorni dalla ricezione del prodotto.
+                                <br>Il prodotto deve essere restituito nella sua confezione originale e in perfette condizioni.
+                                <br>Verrà effettuato un rimborso del prezzo del prodotto, esclusi i costi di spedizione.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="faq transizione-testo-prodotti">
+                        <div class="question">
+                            <h3>Quali sono le vostre politiche sulla privacy?</h3>
+                        </div>
+                        <div class="answer">
+                            <p>La privacy dei nostri clienti è molto importante per noi.
+                                <br>I dati personali forniti durante la registrazione o l'acquisto verranno utilizzati esclusivamente per le finalità legate all'acquisto e alla consegna del prodotto.
+                                <br>Non cederemo i vostri dati a terze parti per alcun motivo.</p>
+                        </div>
+                    </div>
+                    <div class="faq transizione-testo-prodotti">
+                        <div class="question">
+                            <h3>Qual è il vostro numero di telefono per il servizio clienti?</h3>
+                        </div>
+                        <div class="answer">
+                            <p>Il nostro numero di telefono per il servizio clienti è +1-555-555-5555.
+                                <br>Siamo disponibili dal lunedì al venerdì dalle 9:00 alle 17:00 EST.
+                                <br>Potete anche contattarci tramite e-mail all'indirizzo info@unica.com.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Recensioni
+    <section class="pb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-7 my-5 transizione-divisore">
+                    <div class="divisore"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="titoloSezione pb-3 transizione-titolo-sezione">I nostri clienti dicono di noi</h1>
+            <p class="text-center transizione-testo-prodotti">Le recensioni che pubblichiamo sul nostro sito sono autentiche e provengono da clienti reali. Le includiamo perché vogliamo dimostrare la qualità dei nostri gioielli e l'impatto positivo che hanno avuto sui nostri clienti. Siamo orgogliosi
+                di offrire prodotti di alta qualità e speriamo che le recensioni possano aiutare i nostri clienti a prendere una decisione informata sui nostri prodotti.</p>
+        </div>
+
+        <div class="swiper-container-reviews transizione-testo-prodotti">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-100">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="card-header">
+                            <img src="https://cdn2.vectorstock.com/i/1000x1000/01/66/businesswoman-character-avatar-icon-vector-12800166.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body">
+                            <h3>Alessio</h3>
+                            <p>Indossare i gioielli di questo brand mi ha fatto sentire davvero speciale. La loro qualità è straordinaria e l'accuratezza dei dettagli mi ha colpito. Inoltre, i gioielli sono molto leggeri e comodi da indossare tutto il giorno.
+                                Consiglio a chiunque di acquistarne almeno uno!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-btn-next-rev"><i class="fa fa-arrow-right"></i></div>
+            <div class="swiper-btn-prev-rev"><i class="fa fa-arrow-left"></i></div>
+        </div>
+    </section>
+
+    <!--Social
+    <section style="background-color: black;" class="py-5">
+        <div class="container my-5 text-white">
+            <h1 class="titoloSezione transizione-titolo-sezione">Condividi questo progetto</h1>
+            <p class="text-center pb-5 transizione-testo-prodotti">La condivisione sui social è un'opportunità preziosa per far conoscere a una vasta cerchia di persone la nostra missione e i nostri valori. <br> Ogni condivisione rappresenta una spinta verso il successo, grazie alla potenza della condivisione.
+                <br> Quando le persone condividono il nostro messaggio, esso raggiunge un pubblico sempre più vasto, creando una rete di supporto che ci aiuta a raggiungere i nostri obiettivi. <br> La tua condivisione è preziosa, e ci aiuterà a realizzare
+                i nostri sogni e a creare un futuro migliore per tutti.</p>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <h2 class="text-center pb-3 transizione-testo-prodotti">Questa pagina web</h2>
+                    <div class="input-group transizione-testo-prodotti">
+                        <input type="text" value="https://www.sito-web.com" class="form-control text-md-right" id="website-link" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" onclick="copyLink( 'website-link', 'icon-copy-link-site')">
+                                <i id="icon-copy-link-site" class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-5 transizione-testo-prodotti">
+                        <p class="text-md-right">Condividi su:</p>
+                        <div class="d-flex justify-content-md-end">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.sito-web.com" target="_blank" class="btn-lg btn-light mr-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/share?url=https://www.sito-web.com&text=Check out this amazing project!" target="_blank" class="btn-lg btn-dark mr-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://twitter.com/share?url=https://www.sito-web.com&text=Check out this amazing project!" target="_blank" class="btn-lg btn-light mr-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/share?url=https://www.sito-web.com&text=Check out this amazing project!" target="_blank" class="btn-lg btn-dark mr-2">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.sito-web.com&title=Amazing%20Project&summary=Check%20out%20this%20fantastic%20project!&source=https://www.sito-web.com" target="_blank" class="btn-lg
+                        btn-light">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 d-none d-md-block position-relative text-center transizione-divisore-verticale">
+                    <div class="divisore-verticale bg-white"></div>
+                </div>
+                <div class="col-md-5 mt-5 mt-md-0">
+                    <h2 class="text-center pb-3 transizione-testo-prodotti">Campagna Kick Starter</h2>
+                    <div class="input-group transizione-testo-prodotti">
+                        <input type="text" value="https://www.kickstarter.com" class="form-control order-0 order-md-1" id="kickstarter-link" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" onclick="copyLink( 'kickstarter-link', 'icon-copy-link-kickstarter')">
+                                <i id="icon-copy-link-kickstarter" class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-5 transizione-testo-prodotti">
+                        <p>Condividi su:</p>
+                        <div class="d-flex">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.sito-web.com" target="_blank" class="btn-lg btn-light mr-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/share?url=https://www.sito-web.com&text=Check out this amazing project!" target="_blank" class="btn-lg btn-dark mr-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://twitter.com/share?url=https://www.sito-web.com&text=Check out this amazing project!" target="_blank" class="btn-lg btn-light mr-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/share?url=https://www.sito-web.com&text=Check out this amazing project!" target="_blank" class="btn-lg btn-dark mr-2">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.sito-web.com&title=Amazing%20Project&summary=Check%20out%20this%20fantastic%20project!&source=https://www.sito-web.com" target="_blank" class="btn-lg
+                        btn-light">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scopri di più dod
+    <section>
+        <div id="scopri-modal-dod" class="modal">
+            <div class="text-white text-center d-flex justify-content-center" style="pointer-events: none;">
+                <div class="modal-content text-white container card p-0" style=" overflow: hidden;">
+                    <button id="close-btn-dod" class="close-button m-0 p-0" style="z-index: 2;"><i class="fa fa-times-circle"></i></button>
+                    <div class="cover-prodotto">
+                        <div class="cover-prod-img">
+                            <div class="cover-prod-overlay">
+                                <div class="cover-prod-text">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-md-6 col-10">
+                                            <h1>Dodechaedron</h1>
+                                            <p>Siamo orgogliosi di presentarti il nostro orecchino con il dodecaedro stellato, simbolo di equilibrio e armonia. Indossalo e sentiti unica, affascinante e sicura di te. Scegli l'orecchino perfetto per il tuo
+                                                stile.
+                                            </p>
+                                            <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-dod').click()">Ordina ora</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 text-center row d-flex justify-content-center align-items-center">
+                        <div class="col-12">
+                            <h1>Il significato</h1>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-lg-left text-md-right">
+                            <p>Il dodecaedro stellato è un simbolo che ha una storia antichissima e molto interessante. Questa forma è composta da dodici facce uguali, che rappresentano l'unità e l'armonia. Questo simbolo ha una forte connessione con la
+                                cultura greca antica, dove era associato alla dea della saggezza, Atena, e al dio della guerra, Marte. Inoltre, era anche visto come un simbolo di protezione e di equilibrio.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/jandix/jandix1705/jandix170500054/77511969-earrings-for-women-gold-and-silver-jewelry-black-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://img.freepik.com/premium-photo/diamond-earrings-jewelry-luxury-silver-gold-earrings-with-diamonds-sapphires-black-background_78621-5676.jpg?w=2000" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/jandix/jandix1705/jandix170500054/77511969-earrings-for-women-gold-and-silver-jewelry-black-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-md-left text-lg-center order-md-2 order-lg-1">
+                            <p>Nel corso dei secoli, il dodecaedro stellato ha mantenuto la sua importanza e il suo significato simbolico, ed è stato adottato da molte culture e religioni diverse. Ad esempio, nella cultura egizia era associato al sole e
+                                alla luce, mentre nella cultura cristiana era visto come un simbolo della perfezione divina e della completa unità tra Dio e l'umanità.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-1 order-lg-2">
+                            <img src="https://img.freepik.com/premium-photo/diamond-earrings-jewelry-luxury-silver-gold-earrings-with-diamonds-sapphires-black-background_78621-5676.jpg?w=2000" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-2 order-lg-3">
+                            <img src="https://previews.123rf.com/images/jandix/jandix1705/jandix170500054/77511969-earrings-for-women-gold-and-silver-jewelry-black-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-3 order-lg-4">
+                            <img src="https://img.freepik.com/premium-photo/diamond-earrings-jewelry-luxury-silver-gold-earrings-with-diamonds-sapphires-black-background_78621-5676.jpg?w=2000" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-12 order-md-4 order-lg-5 text-lg-left">
+                            <p>Oggi, il dodecaedro stellato ha ancora un significato molto potente e rappresenta l'unità, l'armonia, la protezione, la perfezione e la luce. E' un simbolo molto apprezzato in molti contesti diversi, ed è stato trasformato
+                                in molte opere d'arte e gioielli, come l'orecchino con dodecaedro stellato del nostro brand. Con questo gioiello, potrete portare con voi questo simbolo interessante e significativo in qualsiasi momento della giornata.</p>
+                        </div>
+                    </div>
+                    <h1 class="mt-5 mb-3">Guarda come ti starebbe</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12 d-flex">
+                            <div class="swiper-container-dod">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/stylish-accessory-woman-earring-model-necklace-neck-stylish-accessory-woman-earring-model-necklace-neck-closeup-110267320.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCavJYP1up1Hc4yyS30knXxFM_3j3eK1EBEC_TL48-0ZLIoXJYRmn6ZTtclAg51kQpf8Q&usqp=CAU" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/beautiful-woman-wearing-jewelry-17875226.jpg" class="w-100">
+                                        <img src="https://www.shutterstock.com/image-photo/attractive-lady-wears-elegant-earrings-260nw-1214785330.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://pa.namshicdn.com/product/10/0DUGP400PM/v5/1-zoom-desktop.jpg" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-btns">
+                                <button class="slider-btn selected"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="mt-5 mb-3">Scegli tra</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12 overflow-h">
+                            <h2 style="color: #D4AF37;">Oro</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns dark">
+                                    <button class="slider-btn dark selected"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12" style="overflow: hidden;">
+                            <h2 style="color: #b9b8b8;">Argento</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/silver-earrings-black-background-36653197.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/tarzhanova/tarzhanova1712/tarzhanova171200136/91952583-pair-of-vintage-silver-elegant-earrings-on-black-background.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://hyosilver.com/wp-content/uploads/2019/12/ER043-BB.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/mihakonceptcorn/mihakonceptcorn1611/mihakonceptcorn161100444/67388529-silver-earrings-with-blue-topaz-isolated-on-a-black-background-luxury-jewelry-closeup-.jpg
+                       " class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns dark">
+                                    <button class="slider-btn dark selected"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-11 col-md-9 col-lg-7 mx-auto">
+                                <h2 class="mt-5 mb-2">Argento sterling 925</h2>
+                                <p>L'argento sterling 925 è un materiale prezioso e durevole che brilla con una brillantezza luminosa e resiste all'ossidazione nel tempo. Questo metallo versatile può essere lavorato in molte forme diverse e, rispetto ad
+                                    altri metalli preziosi come l'oro, è economico e accessibile a una vasta gamma di consumatori. Scegli l'argento sterling 925 per un gioiello bello, resistente e accessibile!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="mt-5 mb-5">Qualche consiglio</h1>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-shower fa-3x"></i>
+                                    <p class="mt-3">Evita di indossare gli orecchini d'argento mentre sei sotto la doccia o fai il bagno in piscina, poiché l'acqua può rovinare il metallo.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box-tissue fa-3x"></i>
+                                    <p class="mt-3">Pulisci regolarmente gli orecchini d'argento con un panno morbido o un fazzoletto di carta per rimuovere la polvere e la sporcizia accumulati.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box fa-3x"></i>
+                                    <p class="mt-3">Conserva gli orecchini d'argento in una scatola o in un sacchetto di tessuto separato dai gioielli in metalli diversi per evitare reazioni chimiche.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-wrench fa-3x"></i>
+                                    <p class="mt-3">Fai controllare regolarmente gli orecchini d'argento da un gioielliere per verificare che non siano danneggiati o necessitino di riparazioni.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 mb-2">
+                        <div class="row">
+                            <div class="col-md-6 mt-5 px-2">
+                                <h4>Orecchino in oro</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; color: #D4AF37; margin-top: -40px; margin-bottom: -20px">19.20<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in oro è una scelta elegante e raffinata che non passa mai di moda. Con un prezzo accessibile, puoi facilmente aggiungere questo pezzo ai tuoi accessori giornalieri.</p>
+                            </div>
+                            <div class="col-md-6 mt-5 px-2">
+                                <h4>Orecchino in argento</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px;color: #b9b8b8; margin-top: -40px; margin-bottom: -20px">18.20<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="mx-5 mb-5 btn btn-light d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-dod').click()">Acquistalo subito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scopri di più E
+    <section>
+        <div id="scopri-modal-e" class="modal">
+            <div class="text-white text-center d-flex justify-content-center" style="pointer-events: none;">
+                <div class="modal-content text-white container card p-0" style=" overflow: hidden;">
+                    <button id="close-btn-e" class="close-button m-0 p-0" style="z-index: 2;"><i class="fa fa-times-circle"></i></button>
+                    <div class="cover-prodotto">
+                        <div class="cover-prod-img">
+                            <div class="cover-prod-overlay">
+                                <div class="cover-prod-text">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-md-6 col-10">
+                                            <h1>!E</h1>
+                                            <p>Siamo orgogliosi di presentarti il nostro orecchino con il dodecaedro stellato, simbolo di equilibrio e armonia. Indossalo e sentiti unica, affascinante e sicura di te. Scegli l'orecchino perfetto per il tuo
+                                                stile.
+                                            </p>
+                                            <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-e').click()">Ordina ora</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 text-center row d-flex justify-content-center align-items-center">
+                        <div class="col-12">
+                            <h1>Il significato</h1>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-lg-left text-md-right">
+                            <p>Il dodecaedro stellato è un simbolo che ha una storia antichissima e molto interessante. Questa forma è composta da dodici facce uguali, che rappresentano l'unità e l'armonia. Questo simbolo ha una forte connessione con la
+                                cultura greca antica, dove era associato alla dea della saggezza, Atena, e al dio della guerra, Marte. Inoltre, era anche visto come un simbolo di protezione e di equilibrio.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/jandix/jandix1705/jandix170500054/77511969-earrings-for-women-gold-and-silver-jewelry-black-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://img.freepik.com/premium-photo/diamond-earrings-jewelry-luxury-silver-gold-earrings-with-diamonds-sapphires-black-background_78621-5676.jpg?w=2000" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/jandix/jandix1705/jandix170500054/77511969-earrings-for-women-gold-and-silver-jewelry-black-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-md-left text-lg-center order-md-2 order-lg-1">
+                            <p>Nel corso dei secoli, il dodecaedro stellato ha mantenuto la sua importanza e il suo significato simbolico, ed è stato adottato da molte culture e religioni diverse. Ad esempio, nella cultura egizia era associato al sole e
+                                alla luce, mentre nella cultura cristiana era visto come un simbolo della perfezione divina e della completa unità tra Dio e l'umanità.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-1 order-lg-2">
+                            <img src="https://img.freepik.com/premium-photo/diamond-earrings-jewelry-luxury-silver-gold-earrings-with-diamonds-sapphires-black-background_78621-5676.jpg?w=2000" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-2 order-lg-3">
+                            <img src="https://previews.123rf.com/images/jandix/jandix1705/jandix170500054/77511969-earrings-for-women-gold-and-silver-jewelry-black-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-3 order-lg-4">
+                            <img src="https://img.freepik.com/premium-photo/diamond-earrings-jewelry-luxury-silver-gold-earrings-with-diamonds-sapphires-black-background_78621-5676.jpg?w=2000" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-12 order-md-4 order-lg-5 text-lg-left">
+                            <p>Oggi, il dodecaedro stellato ha ancora un significato molto potente e rappresenta l'unità, l'armonia, la protezione, la perfezione e la luce. E' un simbolo molto apprezzato in molti contesti diversi, ed è stato trasformato
+                                in molte opere d'arte e gioielli, come l'orecchino con dodecaedro stellato del nostro brand. Con questo gioiello, potrete portare con voi questo simbolo interessante e significativo in qualsiasi momento della giornata.</p>
+                        </div>
+                    </div>
+                    <h1 class="mt-5 mb-3">Guarda come ti starebbe</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="swiper-container-dod">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/stylish-accessory-woman-earring-model-necklace-neck-stylish-accessory-woman-earring-model-necklace-neck-closeup-110267320.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCavJYP1up1Hc4yyS30knXxFM_3j3eK1EBEC_TL48-0ZLIoXJYRmn6ZTtclAg51kQpf8Q&usqp=CAU" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/beautiful-woman-wearing-jewelry-17875226.jpg" class="w-100">
+                                        <img src="https://www.shutterstock.com/image-photo/attractive-lady-wears-elegant-earrings-260nw-1214785330.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://pa.namshicdn.com/product/10/0DUGP400PM/v5/1-zoom-desktop.jpg" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-btns">
+                                <button class="slider-btn selected"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="mt-5 mb-3">Scegli tra</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12 overflow-h">
+                            <h2 style="color: #D4AF37;">Oro</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns dark">
+                                    <button class="slider-btn dark selected"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12" style="overflow: hidden;">
+                            <h2 style="color: #b9b8b8;">Argento</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/silver-earrings-black-background-36653197.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/tarzhanova/tarzhanova1712/tarzhanova171200136/91952583-pair-of-vintage-silver-elegant-earrings-on-black-background.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://hyosilver.com/wp-content/uploads/2019/12/ER043-BB.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/mihakonceptcorn/mihakonceptcorn1611/mihakonceptcorn161100444/67388529-silver-earrings-with-blue-topaz-isolated-on-a-black-background-luxury-jewelry-closeup-.jpg
+                       " class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns dark">
+                                    <button class="slider-btn dark selected"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mx-auto overflow-h">
+                            <h2 style="color: #00ccff;">Smaltato</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns dark">
+                                    <button class="slider-btn dark selected"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                    <button class="slider-btn dark"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-11 col-md-9 col-lg-7 mx-auto">
+                                <h2 class="mt-5 mb-2">Argento sterling 925</h2>
+                                <p>L'argento sterling 925 è un materiale prezioso e durevole che brilla con una brillantezza luminosa e resiste all'ossidazione nel tempo. Questo metallo versatile può essere lavorato in molte forme diverse e, rispetto ad
+                                    altri metalli preziosi come l'oro, è economico e accessibile a una vasta gamma di consumatori. Scegli l'argento sterling 925 per un gioiello bello, resistente e accessibile!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="mt-5 mb-5">Qualche consiglio</h1>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-shower fa-3x"></i>
+                                    <p class="mt-3">Evita di indossare gli orecchini d'argento mentre sei sotto la doccia o fai il bagno in piscina, poiché l'acqua può rovinare il metallo.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box-tissue fa-3x"></i>
+                                    <p class="mt-3">Pulisci regolarmente gli orecchini d'argento con un panno morbido o un fazzoletto di carta per rimuovere la polvere e la sporcizia accumulati.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box fa-3x"></i>
+                                    <p class="mt-3">Conserva gli orecchini d'argento in una scatola o in un sacchetto di tessuto separato dai gioielli in metalli diversi per evitare reazioni chimiche.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-wrench fa-3x"></i>
+                                    <p class="mt-3">Fai controllare regolarmente gli orecchini d'argento da un gioielliere per verificare che non siano danneggiati o necessitino di riparazioni.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 mb-2">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mt-5 px-2">
+                                <h4>Orecchino in oro</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px;color: #D4AF37; margin-bottom: -20px">19.10<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in oro è una scelta elegante e raffinata che non passa mai di moda. Con un prezzo accessibile, puoi facilmente aggiungere questo pezzo ai tuoi accessori giornalieri.</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mt-5 px-2">
+                                <h4>Orecchino in argento</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px;color: #b9b8b8; margin-top: -40px; margin-bottom: -20px">16.60<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.</p>
+                            </div>
+                            <div class="col-md-12 col-lg-4 mt-5 mx-auto px-2">
+                                <h4>Orecchino smaltato</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px; color: #00ccff;">18.10<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="mx-5 mb-5 btn btn-light d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-e').click()">Acquistalo subito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scopri di più pc
+    <section>
+        <div id="scopri-modal-pc" class="modal">
+            <div class="text-center d-flex justify-content-center" style="pointer-events: none;">
+                <div class="modal-content container card p-0 overflow-h" style="color: black; background-color: white;">
+                    <button id="close-btn-pc" class="close-button m-0 p-0" style="z-index: 2;"><i class="fa fa-times-circle"></i></button>
+                    <div class="cover-prodotto">
+                        <div class="cover-prod-img" style="background-image: url(https://i.ebayimg.com/images/g/kjIAAOSw7jxdVmIa/s-l1600.jpg);">
+                            <div class="cover-prod-overlay">
+                                <div class="cover-prod-text">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-md-6 col-10">
+                                            <h1>!E Portachiavi</h1>
+                                            <p>Siamo orgogliosi di presentarti il nostro orecchino con il dodecaedro stellato, simbolo di equilibrio e armonia. Indossalo e sentiti unica, affascinante e sicura di te. Scegli l'orecchino perfetto per il tuo
+                                                stile.
+                                            </p>
+                                            <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-pc').click()">Ordina ora</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 text-center row d-flex justify-content-center align-items-center">
+                        <div class="col-12">
+                            <h1>Il significato</h1>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-lg-left text-md-right">
+                            <p>Il dodecaedro stellato è un simbolo che ha una storia antichissima e molto interessante. Questa forma è composta da dodici facce uguali, che rappresentano l'unità e l'armonia. Questo simbolo ha una forte connessione con la
+                                cultura greca antica, dove era associato alla dea della saggezza, Atena, e al dio della guerra, Marte. Inoltre, era anche visto come un simbolo di protezione e di equilibrio.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/cloud7days/cloud7days1810/cloud7days181001512/108996446-blank-multi-color-round-plastic-key-chain-with-key-ring-isolated-on-a-white-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://mandalashop-online.com/3200-large_default/tree-of-life-keychain.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/cloud7days/cloud7days1810/cloud7days181001512/108996446-blank-multi-color-round-plastic-key-chain-with-key-ring-isolated-on-a-white-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-md-left text-lg-center order-md-2 order-lg-1">
+                            <p>Nel corso dei secoli, il dodecaedro stellato ha mantenuto la sua importanza e il suo significato simbolico, ed è stato adottato da molte culture e religioni diverse. Ad esempio, nella cultura egizia era associato al sole e
+                                alla luce, mentre nella cultura cristiana era visto come un simbolo della perfezione divina e della completa unità tra Dio e l'umanità.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-1 order-lg-2">
+                            <img src="https://mandalashop-online.com/3200-large_default/tree-of-life-keychain.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-2 order-lg-3">
+                            <img src="https://previews.123rf.com/images/cloud7days/cloud7days1810/cloud7days181001512/108996446-blank-multi-color-round-plastic-key-chain-with-key-ring-isolated-on-a-white-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-3 order-lg-4">
+                            <img src="https://mandalashop-online.com/3200-large_default/tree-of-life-keychain.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-12 order-md-4 order-lg-5 text-lg-left">
+                            <p>Oggi, il dodecaedro stellato ha ancora un significato molto potente e rappresenta l'unità, l'armonia, la protezione, la perfezione e la luce. E' un simbolo molto apprezzato in molti contesti diversi, ed è stato trasformato
+                                in molte opere d'arte e gioielli, come l'orecchino con dodecaedro stellato del nostro brand. Con questo gioiello, potrete portare con voi questo simbolo interessante e significativo in qualsiasi momento della giornata.</p>
+                        </div>
+                    </div>
+                    <h1 class="mt-5 mb-3">Guarda come ti starebbe</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="swiper-container-dod">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/stylish-accessory-woman-earring-model-necklace-neck-stylish-accessory-woman-earring-model-necklace-neck-closeup-110267320.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCavJYP1up1Hc4yyS30knXxFM_3j3eK1EBEC_TL48-0ZLIoXJYRmn6ZTtclAg51kQpf8Q&usqp=CAU" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/beautiful-woman-wearing-jewelry-17875226.jpg" class="w-100">
+                                        <img src="https://www.shutterstock.com/image-photo/attractive-lady-wears-elegant-earrings-260nw-1214785330.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://pa.namshicdn.com/product/10/0DUGP400PM/v5/1-zoom-desktop.jpg" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-btns">
+                                <button class="slider-btn selected"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="mt-5 mb-3">Scegli tra</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12 overflow-h">
+                            <h2 style="background-color: red; color: white;">Rosso</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12" style="overflow: hidden;">
+                            <h2 style="background-color: rgb(0, 255, 0); color: black;">Giallo</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/silver-earrings-black-background-36653197.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/tarzhanova/tarzhanova1712/tarzhanova171200136/91952583-pair-of-vintage-silver-elegant-earrings-on-black-background.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://hyosilver.com/wp-content/uploads/2019/12/ER043-BB.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/mihakonceptcorn/mihakonceptcorn1611/mihakonceptcorn161100444/67388529-silver-earrings-with-blue-topaz-isolated-on-a-black-background-luxury-jewelry-closeup-.jpg
+                       " class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mx-auto overflow-h">
+                            <h2 style="background-color: yellow; color: black;">Giallo</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mx-auto overflow-h">
+                            <h2 style="background-color: blue; color: white;">Blu</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-11 col-md-9 col-lg-7 mx-auto">
+                                <h2 class="mt-5 mb-2">Argento sterling 925</h2>
+                                <p>L'argento sterling 925 è un materiale prezioso e durevole che brilla con una brillantezza luminosa e resiste all'ossidazione nel tempo. Questo metallo versatile può essere lavorato in molte forme diverse e, rispetto ad
+                                    altri metalli preziosi come l'oro, è economico e accessibile a una vasta gamma di consumatori. Scegli l'argento sterling 925 per un gioiello bello, resistente e accessibile!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="mt-5 mb-5">Qualche consiglio</h1>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-shower fa-3x"></i>
+                                    <p class="mt-3">Evita di indossare gli orecchini d'argento mentre sei sotto la doccia o fai il bagno in piscina, poiché l'acqua può rovinare il metallo.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box-tissue fa-3x"></i>
+                                    <p class="mt-3">Pulisci regolarmente gli orecchini d'argento con un panno morbido o un fazzoletto di carta per rimuovere la polvere e la sporcizia accumulati.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box fa-3x"></i>
+                                    <p class="mt-3">Conserva gli orecchini d'argento in una scatola o in un sacchetto di tessuto separato dai gioielli in metalli diversi per evitare reazioni chimiche.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-wrench fa-3x"></i>
+                                    <p class="mt-3">Fai controllare regolarmente gli orecchini d'argento da un gioielliere per verificare che non siano danneggiati o necessitino di riparazioni.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 mb-2">
+                        <div class="row">
+                            <div class="col-md-6 py-4 px-2" style="background-color: red; color: white;">
+                                <h4>Portachiavi rosso</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in oro è una scelta elegante e raffinata che non passa mai di moda. Con un prezzo accessibile, puoi facilmente aggiungere questo pezzo ai tuoi accessori giornalieri.</p>
+                            </div>
+                            <div class="col-md-6 py-4 px-2" style="background-color: rgb(0, 255, 0); color: black;">
+                                <h4>Portachiavi verde</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.
+                                </p>
+                            </div>
+                            <div class="col-md-6 py-4 px-2" style="background-color: yellow; color: black;">
+                                <h4>Portachiavi giallo</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px;">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.
+                                </p>
+                            </div>
+                            <div class="col-md-6 py-4 px-2" style="background-color: blue; color: white;">
+                                <h4>Portachiavi blu</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px;">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="mx-5 mb-5 mt-3 btn btn-dark d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-pc').click()">Acquistalo subito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scopri di più med
+    <section>
+        <div id="scopri-modal-med" class="modal">
+            <div class="text-center d-flex justify-content-center" style="pointer-events: none;">
+                <div class="modal-content container card p-0 overflow-h" style="color: black; background-color: white;">
+                    <button id="close-btn-med" class="close-button m-0 p-0" style="z-index: 2;"><i class="fa fa-times-circle"></i></button>
+                    <div class="cover-prodotto">
+                        <div class="cover-prod-img" style="background-image: url(https://i.ebayimg.com/images/g/kjIAAOSw7jxdVmIa/s-l1600.jpg);">
+                            <div class="cover-prod-overlay">
+                                <div class="cover-prod-text">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-md-6 col-10">
+                                            <h1>!E Medaglietta</h1>
+                                            <p>Siamo orgogliosi di presentarti il nostro orecchino con il dodecaedro stellato, simbolo di equilibrio e armonia. Indossalo e sentiti unica, affascinante e sicura di te. Scegli l'orecchino perfetto per il tuo
+                                                stile.
+                                            </p>
+                                            <button type="submit" class="btn btn-light d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-med').click()">Ordina ora</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 text-center row d-flex justify-content-center align-items-center">
+                        <div class="col-12">
+                            <h1>Il significato</h1>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-lg-left text-md-right">
+                            <p>Il dodecaedro stellato è un simbolo che ha una storia antichissima e molto interessante. Questa forma è composta da dodici facce uguali, che rappresentano l'unità e l'armonia. Questo simbolo ha una forte connessione con la
+                                cultura greca antica, dove era associato alla dea della saggezza, Atena, e al dio della guerra, Marte. Inoltre, era anche visto come un simbolo di protezione e di equilibrio.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/cloud7days/cloud7days1810/cloud7days181001512/108996446-blank-multi-color-round-plastic-key-chain-with-key-ring-isolated-on-a-white-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://mandalashop-online.com/3200-large_default/tree-of-life-keychain.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img src="https://previews.123rf.com/images/cloud7days/cloud7days1810/cloud7days181001512/108996446-blank-multi-color-round-plastic-key-chain-with-key-ring-isolated-on-a-white-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-md-left text-lg-center order-md-2 order-lg-1">
+                            <p>Nel corso dei secoli, il dodecaedro stellato ha mantenuto la sua importanza e il suo significato simbolico, ed è stato adottato da molte culture e religioni diverse. Ad esempio, nella cultura egizia era associato al sole e
+                                alla luce, mentre nella cultura cristiana era visto come un simbolo della perfezione divina e della completa unità tra Dio e l'umanità.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-1 order-lg-2">
+                            <img src="https://mandalashop-online.com/3200-large_default/tree-of-life-keychain.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-2 order-lg-3">
+                            <img src="https://previews.123rf.com/images/cloud7days/cloud7days1810/cloud7days181001512/108996446-blank-multi-color-round-plastic-key-chain-with-key-ring-isolated-on-a-white-background.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-6 order-md-3 order-lg-4">
+                            <img src="https://mandalashop-online.com/3200-large_default/tree-of-life-keychain.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-4 col-md-12 order-md-4 order-lg-5 text-lg-left">
+                            <p>Oggi, il dodecaedro stellato ha ancora un significato molto potente e rappresenta l'unità, l'armonia, la protezione, la perfezione e la luce. E' un simbolo molto apprezzato in molti contesti diversi, ed è stato trasformato
+                                in molte opere d'arte e gioielli, come l'orecchino con dodecaedro stellato del nostro brand. Con questo gioiello, potrete portare con voi questo simbolo interessante e significativo in qualsiasi momento della giornata.</p>
+                        </div>
+                    </div>
+                    <h1 class="mt-5 mb-3">Guarda come ti starebbe</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="swiper-container-dod">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/stylish-accessory-woman-earring-model-necklace-neck-stylish-accessory-woman-earring-model-necklace-neck-closeup-110267320.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCavJYP1up1Hc4yyS30knXxFM_3j3eK1EBEC_TL48-0ZLIoXJYRmn6ZTtclAg51kQpf8Q&usqp=CAU" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://thumbs.dreamstime.com/z/beautiful-woman-wearing-jewelry-17875226.jpg" class="w-100">
+                                        <img src="https://www.shutterstock.com/image-photo/attractive-lady-wears-elegant-earrings-260nw-1214785330.jpg" class="w-100">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://pa.namshicdn.com/product/10/0DUGP400PM/v5/1-zoom-desktop.jpg" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-btns">
+                                <button class="slider-btn selected"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                                <button class="slider-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="mt-5 mb-3">Scegli tra</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-12 overflow-h">
+                            <h2 style="background-color: red; color: white;">Rosso</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12" style="overflow: hidden;">
+                            <h2 style="background-color: rgb(0, 255, 0); color: black;">Giallo</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/silver-earrings-black-background-36653197.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/tarzhanova/tarzhanova1712/tarzhanova171200136/91952583-pair-of-vintage-silver-elegant-earrings-on-black-background.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://hyosilver.com/wp-content/uploads/2019/12/ER043-BB.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://previews.123rf.com/images/mihakonceptcorn/mihakonceptcorn1611/mihakonceptcorn161100444/67388529-silver-earrings-with-blue-topaz-isolated-on-a-black-background-luxury-jewelry-closeup-.jpg
+                       " class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mx-auto overflow-h">
+                            <h2 style="background-color: yellow; color: black;">Giallo</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mx-auto overflow-h">
+                            <h2 style="background-color: blue; color: white;">Blu</h2>
+                            <div class="col m-0 p-0">
+                                <div class="swiper-container-dod">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://thumbs.dreamstime.com/b/gold-earrings-over-black-background-24201135.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzU-HBhR1W9ydrbK4uyucv2aKKD3VDIxBDYbMg1gRr-QDwWPOoTX7GT_L4gETroyJUZ1Q&usqp=CAU" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://i.ebayimg.com/thumbs/images/g/d8cAAOSwcHZj1yHg/s-l300.jpg" class="w-100">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://media.istockphoto.com/id/1209190391/photo/gold-earrings-on-black.jpg?s=612x612&w=is&k=20&c=TWA3IY6okh5GtVJcbeUpOIG8SG-tf0BSbAITGo_qO_8=" class=" w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-btns">
+                                    <button class="slider-btn selected"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                    <button class="slider-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-11 col-md-9 col-lg-7 mx-auto">
+                                <h2 class="mt-5 mb-2">Argento sterling 925</h2>
+                                <p>L'argento sterling 925 è un materiale prezioso e durevole che brilla con una brillantezza luminosa e resiste all'ossidazione nel tempo. Questo metallo versatile può essere lavorato in molte forme diverse e, rispetto ad
+                                    altri metalli preziosi come l'oro, è economico e accessibile a una vasta gamma di consumatori. Scegli l'argento sterling 925 per un gioiello bello, resistente e accessibile!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="mt-5 mb-5">Qualche consiglio</h1>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-shower fa-3x"></i>
+                                    <p class="mt-3">Evita di indossare gli orecchini d'argento mentre sei sotto la doccia o fai il bagno in piscina, poiché l'acqua può rovinare il metallo.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box-tissue fa-3x"></i>
+                                    <p class="mt-3">Pulisci regolarmente gli orecchini d'argento con un panno morbido o un fazzoletto di carta per rimuovere la polvere e la sporcizia accumulati.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-box fa-3x"></i>
+                                    <p class="mt-3">Conserva gli orecchini d'argento in una scatola o in un sacchetto di tessuto separato dai gioielli in metalli diversi per evitare reazioni chimiche.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                                <div class="text-center">
+                                    <i class="fas fa-wrench fa-3x"></i>
+                                    <p class="mt-3">Fai controllare regolarmente gli orecchini d'argento da un gioielliere per verificare che non siano danneggiati o necessitino di riparazioni.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 mb-2">
+                        <div class="row">
+                            <div class="col-md-6 py-4 px-2" style="background-color: red; color: white;">
+                                <h4>Portachiavi rosso</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in oro è una scelta elegante e raffinata che non passa mai di moda. Con un prezzo accessibile, puoi facilmente aggiungere questo pezzo ai tuoi accessori giornalieri.</p>
+                            </div>
+                            <div class="col-md-6 py-4 px-2" style="background-color: rgb(0, 255, 0); color: black;">
+                                <h4>Portachiavi verde</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.
+                                </p>
+                            </div>
+                            <div class="col-md-6 py-4 px-2" style="background-color: yellow; color: black;">
+                                <h4>Portachiavi giallo</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px;">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.
+                                </p>
+                            </div>
+                            <div class="col-md-6 py-4 px-2" style="background-color: blue; color: white;">
+                                <h4>Portachiavi blu</h4>
+                                <p>A soli:</p>
+                                <p style="font-size: 100px; margin-top: -40px; margin-bottom: -20px;">17.90<span style="font-size: 10px;">€</span></p>
+                                <p>L'orecchino in argento è un'opzione versatile e alla moda che si adatta a qualsiasi stile. Con la sua finitura lucente e il prezzo conveniente, questo orecchino è un'ottima scelta per chi cerca un gioiello di qualità a
+                                    un prezzo accessibile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="mx-5 mb-5 mt-3 btn btn-dark d-inline mr-3 ordina-ora-btn" onclick="document.getElementById( 'close-btn-med').click()">Acquistalo subito</button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin=" anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

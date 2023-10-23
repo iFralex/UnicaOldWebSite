@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina non trovata</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body style="display: flex; margin: 15%; align-items: center; justify-content: center;">
+    <div style="text-align: center;">
+        <h2 style="font-size: 100px;">404</h2>
+        <h1>Pagina non trovata</h1>
+        <p>La pagina che stai cercando sembra non esistere. Contatta.<br>Ti consigliamo di tornare alla home</p>
+        <button type="submit"><a href="../">Torna alla home</a></button>
+    </div>
+
+    <script>
+        var elements = document.querySelectorAll("h1, h2, h3, h4, h5, p, span, button, a, li");
+        var decreasePercentage = 0.2;
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.fontSize = parseFloat(window.getComputedStyle(elements[i]).getPropertyValue("font-size")) * 0.7 + "px";
+            elements[i].style.lineHeight = parseFloat(window.getComputedStyle(elements[i]).getPropertyValue("line-height")) * 1.43 + "px";
+        }
+    </script>
+</body>
+
+</html>

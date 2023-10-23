@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Grazie più regalo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <nav id="navbar-header" class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+        <a class="navbar-brand" href="../">
+            <img src="../images/UNICA logo.png" alt="Logo" style="height: 35px;" class="my-3">
+        </a>
+    </nav>
+
+    <section id="problema" class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-12">
+                <div class="timer">
+                    <svg viewBox="0 0 100 100">
+			<circle style="stroke: #0002;" r="45" cx="50" cy="50" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+            <circle id="progress" r="45" cx="50" cy="50" stroke-dasharray="283" stroke-dashoffset="0"></circle>
+		</svg>
+                    <div class="timer-text">36:00</div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-10 d-flex align-items-center">
+                <div class="row">
+                    <div class="col">
+                        <h2 id="titolo-q">Il piano inclinato</h2>
+                        <p id="desc-q">Hai un oggetto di 2 chili che vuoi far scivolare su un piano inclinato di 30 gradi rispetto al suolo. Non c'è attrito.<br>Quale accelerazione avrà?</p>
+                    </div>
+                    <div id="img-p-q" class="col-12 col-lg-6 d-none">
+                        <img id="img-q" class="w-100" src="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-11" style="border-top: 3px black solid">
+                <div class=" d-flex justify-content-around mt-3">
+                    <span>Risposta (includi l'unità di misura): </span>
+                    <input id="risposta-input" type="text" class="input-group" placeholder="...5cm">
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button id="invia-bt" type="submit" class="btn-lg btn-dark w-75" disabled>Invia</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="esatto" class="risultato d-none" style="background-color: #0a0;">
+        <div class="text-center text-white position-relative">
+            <i class="fas fa-check-circle risultato-icon"></i>
+            <div style="z-index: 1; position: relative;">
+                <h1 style="font-size: 150px;">Esatto!</h1>
+                <p>Fantastico! Hai meritato un bello sconto.</p>
+                <p>Inseriscilo al momento del checkout e risparmia!</p>
+
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3 col-7 my-5 transizione-divisore">
+                            <div class="divisore"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Sconto del</h2>
+                <h1 class="sconto-perc">10%</h1>
+                <h2>Con il codice:</h2>
+                <input type="text" id="codice-sconto" class="text-center fa-2x" value="xxxx-xxxx-xxxx" readonly>
+                <button type="submit" id="copia-bt" class="btn-lg copy-bt"><div class="d-flex justify-content-center align-items-center"><i class="fa fa-copy pr-2"></i>Copia</div></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="errore" class="risultato d-none" style="background-color: #a00;">
+        <div class="text-center text-white position-relative">
+            <i class="fas fa-times-circle risultato-icon"></i>
+            <div style="z-index: 1; position: relative;">
+                <h1 style="font-size: 150px;">Errore</h1>
+                <p>Fantastico! Hai meritato un bello sconto.</p>
+                <p>Inseriscilo al momento del checkout e risparmia!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="scaduto" class="risultato d-none" style="background-color: #a00;">
+        <div class="text-center text-white position-relative">
+            <i class="fas fa-clock risultato-icon"></i>
+            <div style="z-index: 1; position: relative;">
+                <h1 style="font-size: 150px;">Fine</h1>
+                <p>Peccato, purtroppo il tempo è scaduto.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="ord-es" class="overlay-progress">
+        <div id="spin-ord-es" class="loader"></div>
+        <div id="ord-err" class="text-center d-none">
+            <i class="fas fa-ban fa-10x mb-4" style="color: red"></i>
+            <h1>C'è stato un errore</h1>
+            <p>Sembra che si sia verificato un errore.<br>Prova ad aggiornare la pagina, o contattaci per assistenza.</p>
+            <h3 id="ord-err-t" class="d-none">Codice errore: <span id="ord-err-code"></span></h3>
+            <button id="contatti-bt" class="btn btn-danger mt-2">Contatta l'assistenza</button>
+            <div style="height: 100px;"></div>
+        </div>
+
+        <div id="contatti-modal" class="modal">
+            <div class="modal-content">
+                <button id="close-contatti-bt" class="close-button m-0 p-0"><i class="fa fa-times-circle"></i></button>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-9 col-lg-6">
+                            <h3 class="text-center">Contattami</h3>
+                            <p class="text-center">Ciao! Se hai bisogno di parlare con me per qualsiasi cosa, sia che si tratti di domande o semplicemente per connetterti, non esitare a inviarmi un'email o un messaggio! Sarò felice di sentirti.</p>
+                        </div>
+                        <div class="col-md-7 col-12 pt-3 text-center text-md-left">
+                            <p><strong>Email:</strong> <a href="">info@conebrutto.com</a></p>
+                            <p><strong>Numero di telefono:</strong> <a href="">123-456-7890</a></p>
+                        </div>
+                        <div class="col-md-4 col-12 social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin=" anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
